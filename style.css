@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: white;
+    padding: 2em;
+    margin: 8em 0;
+    border-radius: 30px;
+    width: 720px;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color: hsl(24, 5%, 18%);
+}
+
+.container-preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.container-preparation li {
+    margin-top: 0.7em;
+    padding-left: 1em;
+    color: hsl(332, 51%, 32%);
+}
+
+
+.container-preparation ul {
+    padding-left: 0.5em;
+}
+
+.container-preparation h2{
+    font-size: 19px;
+    color: hsl(332, 51%, 32%);
+}
+
+.container-preparation p {
+    color: hsl(30, 10%, 34%);
+}
+
+ ul, ol {
+    margin-left: 1em;
+}
+
+li {
+    padding-left: 1em;
+}
