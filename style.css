@@ -21,12 +21,17 @@ body{
 .design {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.6em;
     background-color: white;
-    padding: 2em;
+    padding: 2.25em;
     margin: 8em 0;
     border-radius: 30px;
     width: 720px;
+}
+.container-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
 }
 
 figure img {
@@ -43,34 +48,113 @@ h1 {
 
 .container-preparation {
     background-color: hsl(330, 100%, 98%);
-    padding: 2em;
+    padding: 1.7em;
     border-radius: 15px;
 }
 
 .container-preparation li {
     margin-top: 0.7em;
-    padding-left: 1em;
+    padding-left: 0.5em;
     color: hsl(332, 51%, 32%);
 }
 
-
-.container-preparation ul {
-    padding-left: 0.5em;
-}
-
-.container-preparation h2{
+.preparation{
     font-size: 19px;
     color: hsl(332, 51%, 32%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
 }
 
-.container-preparation p {
+ li p {
     color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+.instruction ol {
+    font-weight: 600;
 }
 
  ul, ol {
-    margin-left: 1em;
+    margin-left: 1.5em;
 }
+
 
 li {
     padding-left: 1em;
+    color: hsl(14, 45%, 36%);
 }
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+li {
+    margin-top: 1em;
+}
+
+hr {
+    margin: 0.5em 0;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    border: none;
+}
+
+.nutrition{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr > :first-child{
+    padding-left: 2em;
+}
+
+tr > :last-child{
+    color: hsl(14, 45%, 36%);
+}
+
+tbody > tr:last-child{
+    border-bottom: none;
+}
+
+td {
+    padding: 1em 0;
+}
+
+@media (max-width: 375px){
+    .design {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+}
+.container{
+    height: 100%;
+}
+figure img{
+    border-radius: 0;
+}
+.container-mobile{
+    padding: 0 2em;
+}
+h1{
+    font-size: 36px;
+}
+tr > :last-child{
+    padding-left: 0.75em;
+}
+}
+
+
